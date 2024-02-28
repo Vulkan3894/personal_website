@@ -17,3 +17,13 @@ const menuToggle = document.getElementById('navbarSupportedContent')
 navLinks.forEach((l) => {
     l.addEventListener('click', () => { new bootstrap.Collapse(menuToggle).toggle() })
 })
+
+
+    // Add event listener to form submission
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        // Prevent default form submission behavior
+        event.preventDefault();
+        // Submit the form using JavaScript
+        // You can add additional processing here if needed
+        this.submit();
+    });
